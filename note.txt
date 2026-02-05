@@ -1,0 +1,38 @@
+C has 3 main components
+directives -- bascially libraries that begin with #
+functions -- block of code eg. int main(void)
+statement -- lines of code
+
+C compiler working
+preprocessor -> compiler -> linker
+
+command intended for preprocessor is called directives. use to modify program before compiling
+cc -o pun pun.c 
+gcc compiler
+gcc -oo pun pun.c
+
+declarations
+mostly used to declare variable
+type { name }
+
+initiliazation inside declarations
+eg: int height = 10;
+
+identifier -- basically names for variables, functions, marros -- must begin with letter or _underscore
+use lowercase except for macros
+
+c program -- series of token - group of characters that can't be broken without altering their meaning
+float stored in 2 components - mantissa/fraction and an exponent - 12.0 stored as 1.5 * 2^3
+
+keywords -- reserved words that can't be used as identifiers
+
+macro definitions -- as for macro definitions of expressions should be in ()
+#define inches_per_pound 166
+
+#directives
+
+int main(void)
+{
+	declarations
+	statements
+}

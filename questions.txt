@@ -1,0 +1,10 @@
+7. Why is it not a good idea for an idenlitfier to contain more than one adjacent underscore (as
+in current__balance, for example)? // ans: inconsistency and hard to read
+
+8. How many tokens are there in the following statement?
+answer=(3*q-p*p)/3; // ans: 8
+
+9. Insert spaces between the tokens in Exercise 8 to make the statement easier to read.
+ans = (3*q - p*p) / 3;
+
+10. In the dweight. c program (Section 2.4). which spaces are essential?
