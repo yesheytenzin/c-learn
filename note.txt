@@ -29,6 +29,10 @@ keywords -- reserved words that can't be used as identifiers
 macro definitions -- as for macro definitions of expressions should be in ()
 #define inches_per_pound 166
 
+conversion specifications - also known as place holder denoted by %d
+
+** when to use void ** - to explicitly convery a funtion has no parameters and when a func returns nothing
+
 #directives
 
 int main(void)
