@@ -1,6 +1,6 @@
 # Learning C – "C Programming: A Modern Approach" (2nd Edition) by K. N. King
 
-![C Programming: A Modern Approach, 2nd Edition](https://knking.com/books/c2/cover.jpg)
+![C Programming: A Modern Approach, 2nd Edition](https://i.pinimg.com/736x/9f/2a/d8/9f2ad8ff87ce24bcc022259797fd8eb8.jpg)
 
 My personal workspace while working through **C Programming: A Modern Approach, Second Edition** by K. N. King — widely regarded as one of the best (and clearest) books for learning modern C (covering C89 and C99 standards).
 
@@ -26,16 +26,16 @@ Started in February 2026 from Thimphu, Bhutan.
 
 | Chapter | Title                              | Status       | Notes / Key Topics / Completed Work |
 |---------|------------------------------------|--------------|-------------------------------------|
-| 1       | Introducing C                      | ✓ Completed  | History, strengths/weaknesses, first "hello world" |
-| 2       | C Fundamentals                     | ✓ Completed  | Variables, assignment, simple I/O, arithmetic |
-| 3       | Formatted Input/Output             | In Progress  | `printf`, `scanf`, format specifiers, working on exercises |
-| 4       | Expressions                        | Not started  | Operators, precedence, conversions |
-| 5       | Selection Statements               | Not started  | `if`, `switch`, cascades |
-| 6       | Loops                              | Not started  | `while`, `do`, `for`, exits |
-| 7       | Basic Types                        | Not started  | Integers, floats, chars, bool (C99), typedef |
-| 8       | Arrays                             | Not started  | Declaration, initialization, multidimensional |
-| 9       | Functions                          | Not started  | Definition, prototypes, recursion |
-| 10      | Program Organization               | Not started  | Header files, separate compilation, scope |
+| 1       | Introducing C                      | ✓ Completed  | History, first "hello world"        |
+| 2       | C Fundamentals                     | ✓ Completed  | Variables, arithmetic               |
+| 3       | Formatted Input/Output             | In Progress  | `printf`, `scanf`, exercises        |
+| 4       | Expressions                        | Not started  | Operators, precedence, conversions  |
+| 5       | Selection Statements               | Not started  | `if`, `switch`, cascades            |
+| 6       | Loops                              | Not started  | `while`, `do`, `for`, exits         |
+| 7       | Basic Types                        | Not started  | Integers, bool (C99), typedef       |
+| 8       | Arrays                             | Not started  | multidimensional                    |
+| 9       | Functions                          | Not started  | Definition, prototypes, recursion   |
+| 10      | Program Organization               | Not started  | Header files, separate compilation  |
 | —       | **Advanced Features**              | —            | —                                   |
 | 11      | Pointers                           | Not started  | —                                   |
 | 12      | Pointers and Arrays                | Not started  | —                                   |
