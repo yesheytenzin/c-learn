@@ -1,8 +1,9 @@
+#include "exercise.h"
 #include <stdio.h>
-int main(void)
+
+void print_numbers(int start, int end)
 {
-	for(int i=0; i < 5; i++) {
+	for (int i = start; i <= end; i++) {
 		printf("%d\n", i);
 	}
-	return 0;
 }
