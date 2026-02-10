@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 int main(void) {
-	// number random generate. rand() generate values from 0 to 1.0
+	// number random generate. by default rand() generate values from 0 to 1.0
 	int random = rand() % 10;
 	int guess;
 

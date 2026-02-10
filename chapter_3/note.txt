@@ -1,0 +1,15 @@
+diff between %i and %d 
+-- both can read int values
+-- but %d only read int value of base 10
+-- wheread %i reads int value of base 8 and base 16, even base 10
+
+to print % charcter in printf jsut repeat %%
+
+what if input ask for numeric valur but user enter numeric followed by non numeric-value
+-- scanf will read only numeric value and skips the rest or try it in next scanf call
+
+
+scanf put back -- does not mean it pust the data in the variable on read, but stores in temp buffer
+
+what happens if user put comman in between 2 int user input??
+user read fiest int and then it encounters the comma, so it stores the first int and waits for next scanf call
