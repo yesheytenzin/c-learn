@@ -28,7 +28,7 @@ Started in February 2026 from Thimphu, Bhutan.
 |---------|------------------------------------|--------------|-------------------------------------|
 | 1       | Introducing C                      | ✓ Completed  | History, first "hello world"        |
 | 2       | C Fundamentals                     | ✓ Completed  | Variables, arithmetic               |
-| 3       | Formatted Input/Output             | In Progress  | `printf`, `scanf`, exercises        |
+| 3       | Formatted Input/Output             | ✓ Completed  | `printf`, `scanf`, exercises        |
 | 4       | Expressions                        | Not started  | Operators, precedence, conversions  |
 | 5       | Selection Statements               | Not started  | `if`, `switch`, cascades            |
 | 6       | Loops                              | Not started  | `while`, `do`, `for`, exits         |
