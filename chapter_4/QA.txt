@@ -1,0 +1,25 @@
+in c there is no exponent operator. so then we have to use * again and again to mimick the behaviour of an exponent.
+
+in c compiling a program having % with floating point is not possible, alternative solution is ising fmod function instead.
+% is to be mostly used with int values
+
+in c, value of a divison is most of the time always truncated towards 0.
+for example expression such as (a/b) * b + a%b will always be equal to the value of a. whichever value is negative either a or b does not matter due to truncation the result will be same. 
+
+in c we have lvalue which is used with assignment example +=, but c has also rvalue which are expressions that can appear on the right, such as with consatnts, variable, in c we use expression instead of rvalues.
+
+v +=e is not equal to v = v + e if incase v has side effects --> 
+in v += e , v value is evaluated only once. a[i++] += e  in this case i is incrmented
+in v = v + e	a[i++] = a[i++] + e --> in this case value of i is modified and also used elsewhere. in  such case executing the statement is undefined.
+would it be incremented twice, we cannot day for sure. this is the scenario of side effect.
+
+why ++ or --, is it more convinent or better than other ways of incremeneting and decrementing. --> the way to use ++ and -- was inherited into the c languagea by ken thompson the created of unix. he implemented ++ and -- as his compiler could better translate compact solution such as ++ and -- than than the longer i=i+1 method. in modern compiler using any of the way does not matter whether be it fastnsss or perormance. but mostly used for convinence.
+
+++ and -- operators could be used with float value but is rare and is moslty used with int values.
+
+when implenting postfix ++ and -- when is the increment or decremenat performed. --> this is difficult to exactly point out when this happens, but in c there is a concept of sequence point. and updation of stored value ususally happens between prev and next sequence points.
+one example of a sequence point is the end of the statemenet which is followed by a ; before the end of a sequence point all incerment and decrement is completion and this condition needs to be full-filled. other example of a sequence point includes logical operators such as and, or, comma as well as functioncall and arguments. in case of function call, all arguments need to be evaluated before the call can be performed. if in such case there exits increments and decrements, then it needs to be performed before function can be called.
+
+value of an expression is discarded when we fail to store it. for example int i=1; and in the next statement i++; we have a increment expression, however we donot use it or store it, in such case the value is dicarded.
+
+in statemenet such as i=1; what is discarded? in this case as 1 is being assigned, the value and existence of the statement =1 is being discarded, however it is the reason for modifying the value of i and is of no loss;

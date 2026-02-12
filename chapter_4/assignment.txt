@@ -1,0 +1,32 @@
+simplest c assignment operator is = (equals)
+unlike other langauages where = is considered as statement; in c = is considered as an operator as it produces a reasult;
+example --> v = e is the value of v after assignment;
+if int i = 72.99f then after the assignment is 72 and not 71.99
+
+side effects - adding i + j as in mathematics does not result in chnage in values of i an j 
+evaluating i =0 results in 0 and side effects is i is assigned value 0
+
+chained side effects
+eg:
+int i;
+float j;
+
+j = i = 72.99f --> i value is assigned as 72 and as for j it is assigned as 72.0 and not 72.99f
+
+lvalues
+in c most operatord allow their operands to be constants, int, variables but assignment operators requires an lvalue as its left operands.
+lvalue is value which is stored in memory and not in a varibale or is computed.
+example expression such as 10 and i * 5 is not an lvalue
+ correct exmaple -> i=10 but  -10 = i is wrong
+
+compount assignment
+is the mathod  of shortening the long expresssion example=> i += 2 which is same as i = i + 2
+some other example includes -=, *= , /= and %=
+
+howver note that i +=e is not equivalent to i = i + e always, as the result may differ in some cases;
+other example where such cases could be found are in i *= j + k is not equivalent to i = (i*j) + k,
+this is due to the special condition known as side effect associated with assignment i.e =
+if you meant to compile i +=j but happen to write j +=i , program may complile but the logic and ouput may be unexpected.
+
+compount assignment simillar to assignment operator are right associative
+eg: i +=j += k means i += (j += k

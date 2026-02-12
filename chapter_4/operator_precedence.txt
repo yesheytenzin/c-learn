@@ -1,0 +1,12 @@
+highest  + - uniary
+	* / %
+lowest + - binary
+
+assocaitivity
+left assocaitive
+grouping is done from left to right
+i + j * k is same as i + (j * k)
+
+right associative
+grouping is done from right to left
+- + i is same as - (+i)

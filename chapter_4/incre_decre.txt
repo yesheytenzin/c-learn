@@ -1,0 +1,18 @@
+increment and decrement operators
+i = i + 1 could be shorten using compound assignment to  i += 1 which by using increment and decrement operators 
+could be further simplified into i++ or i--
+
+complication arises as ++ or -- could either be prefix or postfix
+
+prefix - pre increment or decrement
+eg: int i =1;
+print ++i --> gives 2
+and then print i gives ---> 2
+
+postfix - post increment or decrement
+eg: int i =1;
+print i++ --> gives 1 and
+then print i gives 2
+
+note: postfix i++ have higher precedence than +i or -i (uniary)
+

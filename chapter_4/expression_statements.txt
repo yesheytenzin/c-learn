@@ -1,0 +1,10 @@
+in C any expression could be used as a statement regardless of type or what it computes.
+this can be done by appending a semi colon to the end of a statement.
+example expression ++c could be turned into a statement using ++c; in such case c value is fetched and incremented.
+after that it again increments but the value is discared but the chaneg to c is permanent.
+
+in such case, due to the value being discarded there is little to no point in using expression as statements.\
+eg:
+i = 1; in such case i value is fetched and stored but not used.
+i--; i value is fetch but not used. but i value is decremented afterwards.
+i * j - 1; in this expression is computed but discarded later on. in such case value of i and j does not change, hence has no use.

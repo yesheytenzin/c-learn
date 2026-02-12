@@ -1,0 +1,57 @@
+Name					associativity	precedence
+increment postfix		left			1
+decrement postfix		left
+
+increment prefix		right			2
+decrement prefix		right
+uniary +				right			
+uniary -				right
+
+multiply				left			3
+divison					left			
+modulus 
+
+addition and subtract	left			4
+
+assignment = +=			right			5
+
+for example --> a= b += c++ - d + --e / -f
+postfix precedence of 1 a= b += (c++) - d + --e / -f
+prefix and uniary precedence of 2  a= b += (c++) - d + --e / (-f)
+divison/multiply has precedence of 3 a= b += (c++) - d + ((--e) /(-f))
+add and sub incuding associativity and precedence of 4 a= b += (((c++) - d) + ((--e) /(-f))
+associativity and precedence for assignment (a= (b += (((c++) - d) + ((--e) /(-f))))
+
+order of subexpression may determine the result 
+foe example (a+b) * (c+d) in such an expression we do not know whether the first sub epression or the second sub expression would be calculated.
+and the output/result of the calculation is determinded by order in which the subexpression is computed.
+
+But there are expections to it such as the logical operators such as (and, or, conditional, and comma operators)
+example:
+a = 5;
+c = (b = a + 2) - (a = 1); in such case where an opearnd is mmodified, the order matters as the result differs on the orders
+if first sub expression is evaluated first then the ouput is 6 but in case of second expression being evaluated first the output is 2
+
+best practice is to avoid using assignment operators in an expression and sepearte is as statement
+for exmaple:
+a = 5;
+b = a + 2;
+a = 1;
+c = b - a;
+when seperating the assignements into seperate statement we will always get the answer we expect.
+
+Also other than assignments operators, increment and decrement operation may face same issue if the sub expression depends on the order.
+eg:
+i = 2;
+j = i * i++;
+we assume the value to be 4 but however that is not the case, it may also be 6.
+Case: if in seoncd operand i value is fetched and incremented to get 3. then first operand i new value is fetched 3 i.e modified (but i remain 2 inside the register),
+in such a case old value and new value is multiplied to get 6;
+later change in value does not effect fetched value as it is stored in register inside the cpu.
+
+undefined behaviour
+-- cases such as the above 2 causes undefined behaviour, which is different from implementation based ones. in such case program output is defined by different compiler, in other cases program may not compile or may crash while running. such a behaviour should be avoided at all cost.
+
+
+
+
