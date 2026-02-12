@@ -1,27 +1,4 @@
-# Learning C – "C Programming: A Modern Approach" (2nd Edition) by K. N. King
-
-![C Programming: A Modern Approach, 2nd Edition](https://i.pinimg.com/736x/9f/2a/d8/9f2ad8ff87ce24bcc022259797fd8eb8.jpg)
-
-My personal workspace while working through **C Programming: A Modern Approach, Second Edition** by K. N. King — widely regarded as one of the best (and clearest) books for learning modern C (covering C89 and C99 standards).
-
-This repo includes:
-- My typed-out versions of the book's example programs
-- Solutions to exercises and programming projects
-- Small notes on tricky parts, gotchas, or things that clicked for me
-- Occasional mini-projects inspired by the chapters
-
-Goal: Build a strong foundation in C, understand low-level concepts, and eventually feel comfortable reading/writing real C code (systems programming, embedded, etc.).
-
-Started in February 2026 from Thimphu, Bhutan.
-
-## Book Details
-
-- **Author**: K. N. King
-- **Edition**: 2nd (2008) – still excellent in 2026!
-- **Focus**: Clear explanations, lots of exercises (~500 total), C89 + C99 features
-- **Official site**: http://knking.com/books/c2/
-- **Why this book?** Great structure, no fluff, strong emphasis on understanding (not just memorizing syntax).
-
+# Learning C – "C Programming: A Modern Approach"
 ## Current Progress
 
 | Chapter | Title                              | Status       | Notes / Key Topics / Completed Work |
