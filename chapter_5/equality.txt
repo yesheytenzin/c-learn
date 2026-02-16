@@ -1,0 +1,9 @@
+equality operator is a unique case. where == does not mean assignment but is used to compare if the left operand is equal to the right operand or not. simillarly != checks if left operand is not equal to right operand. they are also left associatove and produce 1 or 0. andthey have lower precedence than realtional operator.
+
+eg: i > j == k > l is same as (i > j) == (k > l)
+as relational and equality operatos are integer values, they can e exploited.
+eg:  (i >= j) + (i == j) is either 0,1 or 2
+if bothe the relational statements are true -- result is 2 and if only one is true we get 1.
+if only both is false then we get 0.
+
+however this is not a good idea to implment in programs as it makes program difficult to understand.

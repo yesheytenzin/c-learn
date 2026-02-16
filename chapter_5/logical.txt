@@ -1,0 +1,19 @@
+logical operators allow the creation of more complicared logic  by using logical operators such as and, or and not, --> the and operator denoted by && and or operator denoted by || are binary where as not denoted by ! is a uniary operator. 
+
+these operators always produce 0 and 1 but is not a requirement, these logial operand treatany non zero value as true and any 0 value as false.
+
+!expression return the compliment. if 1 then returns 0 and vice versa.
+exp1 && exp2 returns 1 only if both the expression returns true. and 0 if even one returns false.
+exp1 || exp2 returns 1 if any one or both expression returns 1 and 0 if both returns false
+
+the operation starts from the left operand and then to the right. if value of the entire expression can be deduced from the left operand than no need to check right operand. eg when using and operand, have false in left operand, removes the need to check right opernad.
+
+(i != 0 ) && ( j / i > 0)
+for example in the above expression, we first check the left operand expression and if it's value is not zero than we check the right opernad. else if i is equal to zero than no need to check the right operand.
+
+be vary of side effect due to logical operator.
+exmaple:  i >0 && ++j > 0. in this case j is incremented due to side effect. but if i is less than 0 then the right expression is not evaluated meaning j is not incremented.
+
+so take note of side effects, also to make the program more verbose --> change the expression to ++j > 0 && i > 0. or just increment j seperately.
+
+! not has the same percedence as uniary operator. and unlike && and || which are left associative, ! is right associative. && and || both have lower percedence than relational and equality operators.

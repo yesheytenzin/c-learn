@@ -1,0 +1,81 @@
+in certain programs we need to evaluate an expressiin against series values, in such case we use the switch statement.
+although this program could be written using if and cascading if statements, using switch is more readable and lessn error prone
+
+if (grade== 4)
+	printf ("Excellent");
+else if (grade== 3)
+	printf ("Good") ;
+else if (grade== 2)
+	printf ("Average");
+else if (grade== J)
+	printf ("Poor'') ;
+else if (g:rade == 0)
+	printf ("Failing");
+else
+	printf("Illegal grade") ;
+
+the above program could be written using the switch statement
+switch(grade) {
+	case 4: printf("Excellent");
+	break;
+
+	case 3: printf("Good");
+	break;
+
+	case 2: printf("Average");
+	break;
+
+	case 1: printf("Poor");
+	break;
+
+	case 0: printf("Failing");
+	break;
+
+	default: printf("Illegal value");
+	break;
+}
+
+when the above statement is evaluated value of grade is checked agains 4,3,2,1,0 . if incase grade matches 4 then the output is Excellent
+and the switch statement hand the control to the break statement. incase none of the cases matches, then the default value is evaluated.
+
+switch is more easier to read than the cascading if statement, especially when there are multiple cases.
+syntax: 
+
+switch (expression) {
+	case expression: statement;
+	break;
+	....
+
+	default: statement;
+	break;
+}
+
+** components of a switch program **
+controlling expressoin -- switch keyword is followed by a integer value in parenthesis. characters in c can also be treated as a integer
+and can be tested in switch statement. floating point and strings do not work with switch statements.
+
+case label -- each case/test begins with the form--> case constant-expression:
+constant-expression - is same as any other expression, just that it can't have variable or function calls. example 5 is a constant-expression, 5 + 10
+is a constant-expression but n + 10 is not a constant-expression -- these constant-expression must ultimately evaluate to a integer value.
+
+statemens: each case is followed by a statements. no braces required with these statements. the last statement is usally a break statement.
+
+NOTE: duplicate case is not allowed. and default case need not be in the last, and can be in any position. howver multiple preceeding
+cases can share the same statements;
+example:
+switch (grade) {
+	case 4: case 3: case 2: case 1:
+		printf("Passing");
+		break;
+	case 0:
+		printf("failing");
+		break;
+	default:
+		printf("illegal value");
+		break;
+}
+
+note: there is no way to write a switch case in which the case value takes a range of interger values. if in any
+way there is no default case it is not compulsory, and in case if the case does not match with any of the grade then
+the control is simply transferred to the next statement after the switch.
+

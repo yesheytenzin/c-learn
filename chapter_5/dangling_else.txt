@@ -1,0 +1,27 @@
+when using nested if statement, most notable error is the dangling else problem.
+example:
+if (y != 0)
+	if (x != 0)
+		result = x / y;
+else
+	printf("error either of the value cannot be zero\n");
+
+--> in above case to which if statement does the else block belong to. indentation suggest it belongs to out if. However in C, else belongs to the closest if statement that hasn't been paired with any else.
+so according to the C rule the else block belongs to the inner if statement;
+
+if (y != 0)
+	if (x != 0)
+		result = x / y;
+	else
+		printf("error either of the value cannot be zero\n");
+
+to make the else block a part of outer if, we should use braces to indicate it.
+if (y != 0 ) {
+	if (x != 0) {
+		result = x/y
+	}
+} else 
+	printf("error either of the value cannot be zero\n");
+
+this is the one of the key advantage of using braces, the issue of dangling else would not happen
+had we used braces in the first place.

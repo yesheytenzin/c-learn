@@ -1,0 +1,46 @@
+if can also have a else statement
+eg: if (expression) statement else statement, in such case the else statement is executed when the if expression returns a false value, and each statement should end with a semi-colon
+
+eg:
+if (i > j)
+	max = i;
+else
+	max = j;
+
+if and else statements usually are no the same layout directly above and below one another. as for
+if the statements are short, it can also be written in one line. NOTE: inner statements should be seperated by semi-colon.
+
+no restriction on what an if statement can have. inner statement in if can also have another if statement.
+as we can implement nested if inside the if. it would be very difficult to organize, in such case it is best practice to use braces for inner statements. also implement if and else alignment to make it more
+easier to read and organize.
+
+use braces makes it easier to modify program and also take care of errors and bugs that may arrise 
+when writing new statements.
+
+** cascaded if statement **
+in order to test multiple cases, a single if statement does not suffice. in such case, we implement
+cascaded if statement which allows us to test another case before else block.
+else if --> is how cascaded if statement is implemented. the keyord such as if, else if and else
+are not indented instead is is aligned.
+
+example:
+if ()
+else if ()
+else if ()
+else .... this is how cascading works in relation to if statement, this makes avoid problem of excessive
+indentation and makes it easier for the reader.
+
+example of excessive indentation
+if
+else
+	if
+else
+	if
+else
+
+cascading if statement is nothing new, its just implememting another if statement but for multiple test
+cases. is an ordinary if statement that happens to have another if statement as its else clause.
+
+
+
+

@@ -1,0 +1,10 @@
+in c99, we get the boolean type which is defined by
+_Bool flag -- this boolean is basically an unsigned int in disguise, but unlike other ordinary int values,
+_Bool can be assigned the values 1 and 0 ONLY.
+
+trying to assign a non-zero value to the _Bool value make it automatically assigned to 1.
+in c99, there is also a boolean header.  #include <stdbool.h>
+this makes it easier to write boolean such as --> bool flag
+the preprocessor definition #include <stdbool.h> has also macros such as true and false
+
+eg: flag = true; the abover header is very useful where boolean programs are needed.

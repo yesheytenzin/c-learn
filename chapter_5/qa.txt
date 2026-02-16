@@ -1,0 +1,77 @@
+1) My compiler doesn't give a warning when I use= instead of == Is there some
+way to force the compiler to notice the problem? --> when using i == 0, some programmer may use 0 == i, in this case if a user writes
+0 = i instead if 0 == i, an error message would be generated as as it s not possible to assign to 0. however this makes the program look unnatural.
+can only be used when one of the test conditon is not a lvalue. some other tips could be using the -Wparanthesis or -Wall when compiling the program
+using gcc. --> gcc can suppress warning using if (( i = 0))..  double brackets
+
+2) C books seem to use several different styles of indentation and brace place-
+ment for compound statements. Which style is best?
+--> there are 4 different ways of plcing indentation and braces - 
+k&R styple is the one in which the left brace is placed at the end of a line. 
+if (...) {
+}  -- this makes the program more compact. and is the mostly used style in Java, one disadvantage is that braces could be hard to find.
+
+Allman style - in it the left brace is on it very own seperate line.
+eg: 
+if (...)
+{
+	...
+} -- this tyle make it easy to check as braces comes in matching pairs
+
+whitesmith's style -- this style dictates that braces be indented.
+if (...) 
+	{
+	......
+	}
+
+GNU style - is the one in which braces are indented, and the innner statements are further indented.
+if (...)
+	{
+		....
+	}
+--> mmostly used in GNU projects
+
+3) If i is an int variable and f is a float variable, what is the type of the con-
+ditional expression ( i > o ? i : f) ?
+--> as the expression contains a float value, the conditional expression contains float type. if incase i > 0 is true then
+the value of i will be the one after the float conversion.
+
+4) Why doesn't C99 have a better name for its Boolean type?
+_Bool is not a good name choice, compared to modern names such as bool and boolean, this is because older programs might
+have already used these names, stopping it from compiling.
+
+5) OK, so why wouldn't the 11an1e _ Bool break older programs as ,ve1J?
+this is because syntax such as _Bool, which begins with a underscore followed by upper case is reserved for future use and
+should not be used by programmers.
+
+6) The template given for the switch staten1ent described it as the "most com-
+n1on form." Are tbere other forms?
+--> another form different from the common one, would be the switch statement in which the case label is not preceeded by the word case,
+this leads to an ammusing(?) trap . suppose we misspelled the word default.
+switch(..) {
+	...
+	**defualt**: ..    // wrong default spelling
+} --> in such a case the compiler might not detect the error, since it assumes **defualt** as a ordinary label.
+
+7) I've seen several methods of indenting the switch statement. Which way is
+best?
+--> there are basically 2 ways of writting switch statements.
+it to write the statements right after the switch case label.
+switch (coin) {
+	case 1: printf(''Cent'');
+		break;
+	case 5: printf ("Nickel") ;
+		break;
+	case 10: printf( 11 Dime 11 ) ;
+		break;
+--> in this the break statement can also be on the same line.
+switch ( coin) {
+	case l: printf("Cent"); break;
+	case 5: printf( 11 Nickel 11 ) ; break;
+	case 10: printf("Dime"); break;
+	case 25: printf("Quarter"); break;
+}
+
+another way of writing switch statement, is the one in which statement are under the case label, indented to make it stand out.
+In another variation of the switch statement, we can have all the case label and statements aligned directly under the switch keyword.
+

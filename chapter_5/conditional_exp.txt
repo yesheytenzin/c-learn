@@ -1,0 +1,28 @@
+in c if statement allow a program to perform 2 action based on the condition. c has also another way 
+operator that provides one of 2 values depending on the condition
+
+the conditional operator has the symbol ? and : and must be used together.
+expressino1 ? expression2 : expression3 --> these expression can be of any type. and the resulting
+expressiion is called conditional expression. this is a unique operator that requires 3 operands to function.
+
+in above first expressino1 is evaluated and if value is not zero than second expression2 is evaluated.
+if value of expression2 is 0 then expression3 is evaluated;
+
+int i, j, k;
+
+i = 1;
+j = 2;
+k = i > j ? i : j; // check if i > j and if yes resulting value is i , else it is j --> k = 2
+k = (i >= 0 ? i : 0) + j; // k = 3 --which is same as i + j after evaluation
+
+conditional operator make the program shorter but makes it harder to understand. best to avoid them. however is tempting to use in certain cases such as
+with return statement. instead of writing
+if (i >j)
+	return i;
+else 
+	return j;
+
+we could make it more shorter using - return i > j  ? i : j;
+
+using conditonal with printf is some times more useful --> such as printf("%d\n", i > j ? i : j); instead of if-else with printf("%d\n", i);
+conditional expression is also very common in certain kinds of macro definitions

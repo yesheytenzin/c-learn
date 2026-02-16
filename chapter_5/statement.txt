@@ -1,0 +1,13 @@
+statements in C
+return statement --> return something
+expression statemtn --> dealing with arthimetic, assignment, increments
+
+in C there is mainly three statements:
+selection statements --> includes if and else statements, also else if
+itteration statement --> includes while, do and for loops.
+jump statement --> includes break, continue and goto statements -- causes unconditional jumps to some other place in the program
+
+some other statements include the compound statements that group multiple statements into a single statement and a null statement which performs no actions.
+
+
+

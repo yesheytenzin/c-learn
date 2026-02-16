@@ -1,0 +1,19 @@
+simplest form of if statement is --> if (condition) statement
+no need for then keyword as seen in other languages such as example bash scripting
+
+in if statement first the expression/condition in the parenthesis is checked and if it results in true,
+then the statement is executed.
+
+eg: 
+if (line_num == max_lines)
+	line_num = 0;
+in above the statement line_num = 0; is executed if the condition/expression lines_num == max_lines is true.
+
+NOTE: == equality and = assignment are not the same thing.
+you can test two or more conditions using the and && and or || operators.
+but for the statement having && to be executed both left and right operand should be true. and incase of
+or || operator either one can be true. 
+
+in the above example if (expression) statement -- is ususally for only one condition.
+what about if we need to write more than one statements. in such case we use { statements } --> which treats the entire thing inside the braces as a single statement. i.e is ** compound statement ** 
+note: the statements inside the braces are seperated by a semi-colon, but the {} does not end with a semi-colon.

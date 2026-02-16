@@ -1,0 +1,7 @@
+relational operators includes <= >= ==
+equality operators include ==, !=
+logical operators includes || && ! 
+conditional operator (:?) -- which tests a condition within a expression, switch statement
+
+boolean type includes --> those will only two possible outcomes such as true and false
+however in C comparison such as i > j will produce 0-false and 1-true

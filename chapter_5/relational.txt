@@ -1,0 +1,6 @@
+relational operators include < > <= which are used for comparision. however when used in a expression yields a true or false
+
+they can be used to compare various types including int, float and also mixed opperands. 
+precedence of relational operators is even lower than arithimetic -- and is left associative
+eg: i + j < j-k --> is same as (i+j) < (j-k)
+expression such as i > j > k is allowd but has different meaning, the output is always 1 or0. in such as the expression is (i > j) > k. in this first i > j is checked and then the result is compared with k. if you want to compare seperately. use logical operators such as &&

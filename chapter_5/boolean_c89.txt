@@ -1,0 +1,22 @@
+c89 lacks proper boolean type, this is a drawback as program needing to use true or false values could not be implemented.
+one workaround this limitations is by assigining a int value with 0 or 1
+example: int flag;
+flag = 0;
+...
+flag = ;
+
+although this works, it is harder for readability, as it assigns boolean value 0 and 1 to the flag
+to make program more readable, it became more clearer to use macro definitions such as 
+#define TRUE 1
+#define FALSE 0
+
+this makes it more readable such that flag = TRUE/FALSE
+to test if flag was equal to true --> if (flag == TRUE) ..
+this makes it more concise but also because it works even if the flag value changes.
+to test if flag was false --> if (flag == FALSE)
+
+we can make it more concise by creating your own type.
+#define BOOL int -- this defines a bool type but is actually a int data type.
+
+BOOL flag; --> this makes it easier to read and understand that flag is a boolean. there are better ways to setup a boolean type
+using type definitions and enumeration in c98
