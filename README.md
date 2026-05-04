@@ -7,7 +7,7 @@
 | 2       | C Fundamentals                     | ✓ Completed  | Variables, arithmetic               |
 | 3       | Formatted Input/Output             | ✓ Completed  | `printf`, `scanf`, exercises        |
 | 4       | Expressions                        | ✓ Completed  | Operators, precedence, conversions  |
-| 5       | Selection Statements               | pending  | `if`, `switch`, cascades            |
+| 5       | Selection Statements               | Not started  | `if`, `switch`, cascades            |
 | 6       | Loops                              | Not started  | `while`, `do`, `for`, exits         |
 | 7       | Basic Types                        | Not started  | Integers, bool (C99), typedef       |
 | 8       | Arrays                             | Not started  | multidimensional                    |
